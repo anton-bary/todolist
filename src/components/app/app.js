@@ -15,8 +15,8 @@ export default class App extends Component {
     state = {
         todoData: [
             this.createTodoItem("Drink Coffee"),
-            this.createTodoItem("Drink Irish Coffee"),
-            this.createTodoItem("Drink Whiskey"),
+            this.createTodoItem("Drink More Coffee"),
+            this.createTodoItem("Drink All Coffee In House"),
         ]
     };
 

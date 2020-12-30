@@ -12,7 +12,7 @@ export default class TodoListItem extends Component {
                 important,
                 done } = this.props;  
 
-        let classNames = "todo-list-item";
+        let classNames = "todo-list-item d-flex";
 
         if (done) {
             classNames += " done";
