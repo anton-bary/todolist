@@ -17,6 +17,8 @@ export default class App extends Component {
             this.createTodoItem("Drink Coffee"),
             this.createTodoItem("Drink More Coffee"),
             this.createTodoItem("Drink All Coffee In the House"),
+            this.createTodoItem("Go to Barcelona"),
+            this.createTodoItem("Then Go to Tenerife")
         ],
         term: '',
         filter: 'all' //active, all, done
