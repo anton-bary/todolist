@@ -10,7 +10,7 @@ deploy:
   domain: anton-bary.github.io/todolist/
   provider: pages
   skip_cleanup: true
-  github_token: 2f6473f89265bc98b84c908e0411adf5cc563cb8
+  github_token: e6a9a3344d586a2839b21f66c0b701e359896b63
   keep_history: true
   on:
     branch: main
