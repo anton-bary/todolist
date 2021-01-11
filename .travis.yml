@@ -1,20 +1,6 @@
-dist: trusty
 language: node_js
 node_js:
-- "stable"
-before_script:
-- npm install
-script:
-- npm run build
-deploy:
-  project: ./build/
-  domain: anton-bary.github.io/todolist/
-  skip_cleanup: true
-
-
-language: node_js
-node_js:
-- 'stable'
+  - 'stable'
 
 cache:
   directories:
@@ -26,7 +12,7 @@ script:
 
 deploy:
   provider: pages
-  github-token: 2723cdafd427d560bbb140ada4e52633e326caa2  # Set in the settings page of your repository, as a secure variable
+  github-token: 2f6473f89265bc98b84c908e0411adf5cc563cb8
   committer-from-gh: true
   skip-cleanup: true
   keep-history: true
