@@ -1,8 +1,12 @@
+dist: trusty
 language: node_js
-
 node_js:
-  - "14.15.1"
-
+- "stable"
+before_script:
+- npm install
 script:
-    - npm test
-    - npm run build
+- npm run build
+deploy:
+  project: ./build/
+  domain: anton-bary.github.io/todolist/
+  skip_cleanup: true
