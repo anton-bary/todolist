@@ -1,4 +1,13 @@
+language: node_js
+node_js:
+  - "stable"
+before_script:
+  - npm install
+script:
+  - npm run build
 deploy:
+  project: ./build/
+  domain: anton-bary.github.io/todolist/
   provider: pages
   skip_cleanup: true
   github_token: 2f6473f89265bc98b84c908e0411adf5cc563cb8
