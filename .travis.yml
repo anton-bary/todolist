@@ -1,24 +1,16 @@
 language: node_js
 node_js:
-- 'stable'
-
-before_script:
-  - npm install
-
+  - "stable"
 cache:
   directories:
-    - "node_modules"
-
+  - node_modules
 script:
+  - npm test
   - npm run build
-
 deploy:
   provider: pages
-  github_token: e6a9a3344d586a2839b21f66c0b701e359896b63
-  committer-from-gh: true
-  skip-cleanup: true
-  keep-history: true
-  local-dir: build
-  repo: anton-bary/todolist
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: build
   on:
-    branch: main
+    branch: master
