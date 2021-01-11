@@ -12,12 +12,10 @@ script:
 
 deploy:
   provider: pages
-  github-token: 2f6473f89265bc98b84c908e0411adf5cc563cb8
-  committer-from-gh: true
-  skip-cleanup: true
-  keep-history: true
-  local-dir: build
-  repo: anton-bary.github.io/todolist/
-  target-branch: main
+  github_token: 2f6473f89265bc98b84c908e0411adf5cc563cb8
+  committer_from_gh: true
+  skip_cleanup: true
+  keep_history: true
+  local_dir: build
   on:
     branch: main
